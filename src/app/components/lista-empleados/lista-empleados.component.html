@@ -1,0 +1,13 @@
+<div class="empleados">
+    @for (empleado of empleados; track $index) {
+            <div class="card empleado">
+                <div class="card-body">
+                    <h5 class="card-title"> {{empleado.apellido}}, {{empleado.nombre}}</h5>
+                    <img [src]="empleado.imagen" alt="">
+                    <p class="card-text">email:<br> {{empleado.email}}</p>
+                    <p class="card-text">edad:<br>  {{empleado.edad}}</p>
+                    <p class="card-text">departamento:<br>  {{empleado.departamento}}</p>
+                </div>
+            </div>
+    }
+</div>
